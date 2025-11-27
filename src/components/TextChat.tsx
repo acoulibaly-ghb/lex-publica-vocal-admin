@@ -103,7 +103,7 @@ const TextChat: React.FC = () => {
   const audioQueueRef = useRef<string[]>([]);
   const isProcessingQueueRef = useRef(false);
 
-  // Retrieve API Key from process.env as per guidelines
+  // Retrieve API Key
   const API_KEY = process.env.API_KEY;
 
   const suggestions = [

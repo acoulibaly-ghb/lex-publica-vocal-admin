@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juriste Admin FR</title>
-    <!-- Nous gardons Tailwind via CDN pour simplifier la configuration -->
+    <!-- Tailwind via CDN est conservé pour simplifier, mais idéalement devrait être installé via npm -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -15,12 +15,12 @@
   <script type="importmap">
 {
   "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0",
     "vite": "https://aistudiocdn.com/vite@^7.2.4",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
     "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
-    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
   }
 }
 </script>
@@ -28,7 +28,7 @@
 </head>
   <body class="bg-slate-50 text-slate-900">
     <div id="root"></div>
-    <!-- Notez le chemin /src/index.tsx qui est standard pour Vite -->
+    <!-- CORRECTION ICI : Le chemin doit pointer vers le dossier src -->
     <script type="module" src="/src/index.tsx"></script>
   <script type="module" src="/index.tsx"></script>
 </body>
